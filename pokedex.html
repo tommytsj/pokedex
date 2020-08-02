@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="pokedex.css" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav class=" navbar navbar-expand-lg navbar-light bg-light" id="fondmenu">
+    <a class="navbar-brand" href="index.html">Acceuil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="pokedex.html">Pokedex <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0" action>
+            <input id="queryLoc" class="form-control mr-sm-2" type="text"  placeholder="Recherche ton pokemon" >
+            <a href="#Scroll"><button class="btn btn-outline-light my-2 my-sm-0" onclick="buttonClickGET()">Valider</button></a>
+        </div>
+    </div>
+</nav>
+    
+    <br />
+    <div class="image">
+        <img src="https://fontmeme.com/permalink/200506/5afd134df6cc77e22ac32141bbde155d.png" alt="police-pokmon" border="0"></a>
+    </div>
+    <br />
+    <br />
+    <p class="font_text">Le Pokedex est une encyclopédie recensant les créatures appelées Pocket Monster, plus communément appelés Pokemon. Il recense les informations concernant tout sur les Pokemon.
+        Il suffit juste d’écrire le nom d’un pokemon (et en anglais !) et son nom, son types et sa/ses talents apparaîtront !  
+    </p>
+    <br />
+    <div class="image">
+            <img src="https://fontmeme.com/permalink/200506/82e6c6ee57caba86765e2d4e081539ef.png" alt="police-pokmon" border="0"></a>
+    </div>
+    
+    <br />
+    
+
+
+<center>
+    <div id="pokedex">
+        <div id="left">
+          <div id="logo"></div>
+          <div id="bg_curve1_left"></div>
+          <div id="bg_curve2_left"></div>
+          <div id="curve1_left">
+            <div id="buttonGlass">
+              <div id="reflect"> </div>
+            </div>
+            <div id="miniButtonGlass1"></div>
+            <div id="miniButtonGlass2"></div>
+            <div id="miniButtonGlass3"></div>
+          </div>
+          <div id="curve2_left">
+            <div id="junction">
+              <div id="junction1"></div>
+              <div id="junction2"></div>
+            </div>
+          </div>
+          <div id="screen">
+              
+            <div id="topPicture">
+              <div id="buttontopPicture1"></div>
+              <div id="buttontopPicture2"></div>
+            </div>
+            <img id="imgPokemon">
+            <div id="buttonbottomPicture"></div>
+            <div id="speakers">
+              <div class="sp"></div>
+              <div class="sp"></div>
+              <div class="sp"></div>
+              <div class="sp"></div>
+            </div>
+          </div>
+          <div id="bigbluebutton"></div>
+          <div id="barbutton1"></div>
+          <div id="barbutton2"></div>
+          <div id="blackblock"></div>
+          <div id="miniscreen"></div>
+          <div id="cross">
+            <div id="leftcross">
+              <div id="leftT"></div>
+            </div>
+            <div id="topcross">
+              <div id="upT"></div>
+            </div>
+            <div id="rightcross">
+              <div id="rightT"></div>
+            </div>
+            <div id="midcross">
+              <div id="midCircle"></div>
+            </div>
+            <div id="botcross">
+              <div id="downT"></div>
+            </div>
+          </div>
+        </div>
+        <div id="right">
+          <div id="stats">
+            <div id="nom">
+            </div>
+          </div>
+          <div id="blueButtons1">
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+          </div>
+          <div id="blueButtons2">
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+            <div class="blueButton"></div>
+          </div>
+          <div id="blackBox2"></div>
+          <div id="barbutton3"></div>
+          <div id="barbutton4"></div>
+          <div id="buttonGlass2">
+            <div id="reflect2"> </div>
+          </div>
+          <div id="barbutton6"></div>
+          <div id="barbutton7"></div>
+          <div id="yellowBox1"></div>
+          <div id="yellowBox2"></div>
+          <div id="bg_curve1_right"></div>
+          <div id="bg_curve2_right"></div>
+          <div id="curve1_right"></div>
+          <div id="curve2_right"></div>
+        </div>
+      </div>
+      <div id="Scroll"></div>
+    <table>
+        <tr>
+           <td id="nom"></td>
+        </tr>
+        <tr>
+            <td id="type"></td>
+        </tr>
+        <tr>
+            <td id="ability1"></td>
+        </tr>
+        <tr>
+            <td id="ability2"></td>
+        </tr>
+     </table>
+    </div></center>
+   
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
